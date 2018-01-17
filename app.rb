@@ -25,6 +25,7 @@ class App < Sinatra::Base
     subtract = params[:operation]
     multiply = params[:operation]
     divide = params[:operation]
+    if params[:operation] == 'add'
   end
 
 end
