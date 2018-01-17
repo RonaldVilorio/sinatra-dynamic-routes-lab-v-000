@@ -37,10 +37,6 @@ class App < Sinatra::Base
       "Type add,subtract,multiply, or divide please"
     end
 
-
-
-
-
   end
 
 end
