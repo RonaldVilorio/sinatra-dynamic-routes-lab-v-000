@@ -11,6 +11,7 @@ class App < Sinatra::Base
   end
   get '/say/:number/:phase' do
     params[:number]
+    params[:phase]
 
   end
 
