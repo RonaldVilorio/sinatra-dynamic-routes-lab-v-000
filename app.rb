@@ -10,6 +10,7 @@ class App < Sinatra::Base
     num_squared.to_s
   end
   get '/say/:number/:phase' do
+    params[:number]
 
   end
 
