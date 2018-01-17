@@ -34,6 +34,8 @@ class App < Sinatra::Base
     elsif params[:operation] == 'divide'
       "#{num1.0 / num2}" || "#{num2.0 % num1}"
     else params[:operation].to_i != 0
+      "Type add,subtract,multiply, or divide please"
+    end
 
 
 
