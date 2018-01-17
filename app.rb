@@ -10,8 +10,8 @@ class App < Sinatra::Base
     num_squared.to_s
   end
   get '/say/:number/:phrase' do
-    number = params[:number]
-    phrase = params[:phrase]
+    erb :say
+
 
   end
 
