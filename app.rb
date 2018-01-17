@@ -23,8 +23,8 @@ class App < Sinatra::Base
   get '/:operation/:number/:number2' do
     add = params[:operation]
     subtract = params[:operation]
-    multiply= params[:operation]
-    divide= params[:operation]
+    multiply = params[:operation]
+    divide = params[:operation]
   end
 
 end
