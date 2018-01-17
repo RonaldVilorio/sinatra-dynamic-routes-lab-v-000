@@ -21,11 +21,10 @@ class App < Sinatra::Base
     "#{word1} #{word2} #{word3} #{word4} #{word5}."
   end
   get '/:operation/:number/:number2' do
-    add = params[:operation]
-    subtract = params[:operation]
-    multiply = params[:operation]
-    divide = params[:operation]
+    params[:number1]
+  params[:number2]
     if params[:operation] == 'add'
+      
   end
 
 end
