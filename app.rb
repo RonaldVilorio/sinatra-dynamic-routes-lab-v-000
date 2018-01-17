@@ -9,6 +9,8 @@ class App < Sinatra::Base
     num_squared = params[:number].to_i ** 2
     num_squared.to_s
   end
-  get '/say/:number'
+  get '/say/:number/:phase' do
+
+  end
 
 end
