@@ -28,19 +28,11 @@ class App < Sinatra::Base
     if params[:operation] == 'add'
       "#{num1 + num2}"
     elsif params[:operation] == 'subtract'
-      if num1 > num2
-        "#{num1 - num2}"
-      else
-        "#{num2 - num1}"
-     end
+      "#{num1 - num2}" || "#{num2 - num1}"
     elsif params[:operation] == 'multiply'
       "#{num1 * num2}"
     elsif params[:operation] == 'divide'
-      if num1 > num2
-        "#{num1 - num2}"
-      else
-        "#{num2 - num1}"
-     end
+      "#{num1 / num2}" || "#{num2 / num1}"
     else params[:operation].to_i != 0
       "Type add, subtract, multiply, or divide please"
     end
