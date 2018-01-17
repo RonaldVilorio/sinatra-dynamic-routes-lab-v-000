@@ -33,7 +33,7 @@ class App < Sinatra::Base
       "#{num1 * num2}"
     elsif params[:operation] == 'divide'
       "#{num1.0 / num2}" || "#{num2.0 % num1}"
-    else params[:operation].to_i == true
+    else params[:operation].to_i != 0
 
 
 
